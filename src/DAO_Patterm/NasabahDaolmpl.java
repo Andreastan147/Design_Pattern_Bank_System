@@ -18,7 +18,7 @@ public class NasabahDaolmpl implements NasabahDao{
         nasabah = new ArrayList<Nasabah>();
         nasabah.add(new Nasabah("Andreas David DL Hardi",0));
         nasabah.add(new Nasabah("6702020009", 1));
-        nasabah.add(new Nasabah("uang yang anda setor harus kelipatan 50.000",2));
+        nasabah.add(new Nasabah("uang yang anda setor/tarik harus kelipatan 50.000",2));
         nasabah.add(new Nasabah("MAAF SALDO ANDA KURANG!!! ", 3));
     }
     @Override
