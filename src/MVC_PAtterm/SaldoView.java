@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class SaldoView {
     NasabahDaolmpl nasabahDao = new NasabahDaolmpl();
     Nasabah errorinput = nasabahDao.getNasabah(2);
+    Nasabah saldokurang = nasabahDao.getNasabah(3);
 
     int saldoawal = 500000;
     Scanner input = new Scanner(System.in);
@@ -37,9 +38,13 @@ public class SaldoView {
     {
         if (saldoawal <= 100000 || saldoawal <= ambil) {
            System.out.println("======>"+saldokurang.getName());
-        }else 
+        }else if(ambil%50000 == 0)
+        {
             saldoawal = saldoawal-ambil;
             inputsaldo.setSaldo(saldoawal);
             System.out.println("Saldo anda Saat ini adalah : \n-->Rp." +saldoawal +" <--");
+        }else
+            System.out.println("======>"+errorinput.getName());
+
     }
 }
