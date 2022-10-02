@@ -35,11 +35,8 @@ public class SaldoView {
     }
     public void ambiluang(int ambil)
     {
-        if (saldoawal <= 100000) {
-           System.out.println("Maaf Saldo anda kurang !!!!!");
-        }else if(saldoawal <= ambil)
-        {
-           System.out.println("Maaf Saldo anda kurang !!!!!"); 
+        if (saldoawal <= 100000 || saldoawal <= ambil) {
+           System.out.println("======>"+saldokurang.getName());
         }else 
             saldoawal = saldoawal-ambil;
             inputsaldo.setSaldo(saldoawal);
