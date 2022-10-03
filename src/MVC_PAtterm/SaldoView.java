@@ -6,7 +6,6 @@ package MVC_PAtterm;
 import DAO_Patterm.Nasabah;
 import DAO_Patterm.NasabahDaolmpl;
 import java.util.Scanner;
-
 /**
  *
  * @author ADT
@@ -45,6 +44,5 @@ public class SaldoView {
             System.out.println("Saldo anda Saat ini adalah : \n-->Rp." +saldoawal +" <--");
         }else
             System.out.println("======>"+errorinput.getName());
-
     }
 }
